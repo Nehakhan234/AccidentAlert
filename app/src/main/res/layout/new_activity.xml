@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/road">
+
+    <TextView
+        android:text="@string/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+
+
+    <TextView
+        android:text="@string/phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_below="@+id/editName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:hint="Enter Phone no" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:textStyle="normal"
+        android:layout_below="@+id/textView"
+        android:freezesText="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="Enter Name"
+        android:gravity="center_vertical|center"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignEnd="@+id/button5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editPass"
+        android:textStyle="normal"
+        android:layout_below="@+id/textView2"
+        android:freezesText="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="Enter Phone no"
+        android:gravity="center_vertical|center"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignEnd="@+id/editName" />
+
+
+    <Button
+        android:text="@string/add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:onClick="addUser"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/editPass"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/view_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:textSize="18sp"
+        android:onClick="viewdata"
+        android:textStyle="bold|italic"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:id="@+id/button7"
+        android:onClick="delete"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button5"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:freezesText="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        android:textColorHint="#FFFFFF"
+        android:hint="Enter name to delete "
+        android:layout_marginStart="15dp"
+        android:layout_alignTop="@+id/button7"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

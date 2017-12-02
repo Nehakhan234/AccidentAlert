@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RoadMishApp</string>
+    <string name="username">Enter name:</string>
+    <string name="phoneno">Enter phone no:</string>
+    <string name="view_data">View</string>
+    <string name="add_user">save</string>
+
+</resources>
